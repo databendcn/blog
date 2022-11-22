@@ -1,0 +1,102 @@
+baseURL = "https://blog.databend.cn/"
+languageCode = "zh-cn"
+title = "Databend 中文博客"
+theme = "ink-free"
+paginate = 5
+
+copyright = "© Copyright Reserved"
+# Demo only
+#ignoreErrors = ["error-missing-instagram-accesstoken"]
+
+[permalinks]
+  posts = "/:year/:month/:title"
+
+[params]
+	subtitle = "[Databend](https://github.com/datafuselabs/databend/) 是一款强大的云数仓。专为弹性和高效设计。自由且开源。即刻体验云服务：<https://app.databend.com> 。"
+
+	# Optional 64x64 avatar image.
+	#avatar = "https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg"
+
+	featherIconsCDN = false
+
+	# Site color - dark/light/auto
+	mode = "auto"
+
+	# Enable a table of contents
+	toc = true
+
+	# Max tags
+	maxTags = 7
+
+	# Define words per minute to approximate reading time
+	wpm = 250
+
+	# Stupid footers :)
+	footers = [ 
+		"Change My Mind - Most apps are just database frontends.",
+	]
+
+	# Github base url
+	github = "https://github.com/databendcn/blog"
+
+
+# Nav.
+[[menu.main]]
+name = "主页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "全部帖子"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "关于"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "标签"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/databendcn/"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/Datafuse_Labs"
+
+[[params.social]]
+name = "Slack"
+icon = "slack"
+url = "https://link.databend.rs/join-slack"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = true
+    startLevel = 2 
