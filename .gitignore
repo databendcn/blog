@@ -1,3 +1,4 @@
 # hugo ignore
 .hugo_build.lock
-resources
+resources/
+public/
