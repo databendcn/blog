@@ -1,4 +1,4 @@
-baseURL = "https://databendcn.github.io/blog"
+baseURL = "https://databendcn.github.io/blog/"
 languageCode = "zh-cn"
 title = "Databend 中文博客"
 theme = "ink-free"
