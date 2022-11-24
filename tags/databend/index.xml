@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Databend on Databend 中文博客</title><link>https://databendcn.github.io/blog/tags/databend/</link><description>Recent content in Databend on Databend 中文博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© Copyright Reserved</copyright><lastBuildDate>Wed, 26 Oct 2022 17:54:00 +0000</lastBuildDate><atom:link href="https://databendcn.github.io/blog/tags/databend/index.xml" rel="self" type="application/rss+xml"/><item><title>基于 MinIO 部署单实例 Databend | 新手篇（1）</title><link>https://databendcn.github.io/blog/2022/10/%E5%9F%BA%E4%BA%8E-minio-%E9%83%A8%E7%BD%B2%E5%8D%95%E5%AE%9E%E4%BE%8B-databend-%E6%96%B0%E6%89%8B%E7%AF%871/</link><pubDate>Wed, 26 Oct 2022 17:54:00 +0000</pubDate><guid>https://databendcn.github.io/blog/2022/10/%E5%9F%BA%E4%BA%8E-minio-%E9%83%A8%E7%BD%B2%E5%8D%95%E5%AE%9E%E4%BE%8B-databend-%E6%96%B0%E6%89%8B%E7%AF%871/</guid><description>MinIO 简介 MinIO是个高性能，云原生的对象存储。它提供了与 Amazon S3 云存储服务兼容的 API，使用 MinIO 为机器学习、分析和应用程序数据工作负载构建高性能基础架构。轻量，操作简单。
+Databend 简介 Databend 是一个使用 Rust 研发、开源、完全面向云架构的新式数仓，提供极速的弹性扩展能力，致力于打造按需、按量的 Data Cloud 产品体验。具备以下特点：
+开源 Cloud Data Warehouse 明星项目 Vectorized Execution 和 Pull&amp;amp;Push-Based Processor Model 真正的存储、计算分离架构，高性能、低成本，按需按量使用 完整的数据库支持，兼容 MySQL, Clickhouse 协议 支持事务，支持 Time Travel, Database Clone, Data Share 等功能 支持基于同一份数据的多租户读写、共享操作 开源地址：https://github.com/datafuselabs/databend/
+官方文档：https://databend.rs
+理解 Databend 架构 Databend 是一个开源的云原生数仓，为了更好的适用于云环境，Databend 从架构上分为三层：MetaService 层，Query 层，存储层。
+MetaService 层
+这是 Databend 司令部，存储：权限定义，表结构定义，事务管理，表和数据的关联以及数据共享的整体逻辑。推荐集群方式部署。
+Query 层
+Query 层是 Databend 中直接和用户交互及调用存储的一层。用户通过 SQL 和 Databend 交互，Query层接到用户的请求后读写存储层。该层不用实时在线，使用时拉起，同时也支持动态扩容及收缩。</description></item></channel></rss>
